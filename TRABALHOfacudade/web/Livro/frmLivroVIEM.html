@@ -1,0 +1,69 @@
+
+<html>
+    <head>
+        <title>Uniasselvi Projeto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- CSS para configurar o cabeçalho -->
+        <style> 
+            *{ margin: 0 auto} /* Centraliza o cabeçalho*/
+           
+            header {
+                width: 90%;
+                background-color: #989304;
+                display: flex;
+                align-items: center;
+            }
+            nav{width: 90%; 
+            background-color: #0EF4FC;
+            display: flex;
+            align-items: center;}
+            nav a{  /*Edita o link*/
+                color:black
+            }
+            Nav a:hover{ /*Edita o que acontece quando selecionado*/
+                color: yellow;
+            }
+            main{ /* Corpo do site area principal*/
+                width: 90%;
+                height: 600px;
+                /*background-color: #FCF40E;*/
+                background-image: url(../Livro/Fotos/uniasselvemona.jpg);
+                    
+            }
+            footer{width: 90%;
+                   background-color: #0EF4FC;
+                   height: 100px;
+               }
+               
+           
+        </style>
+    </head>
+    
+    <body>
+        <header> <!-- Cria o cabeçalho da pag -->
+            <h1> Uniasselvi Paper Implementação</h1></header>
+        
+        <!-- Segunda sequimento do site -->
+        <nav> <label>LIVROS DO JOÃO</label> <br><!-- comment -->
+      
+           <a href="listarlivro.jsp">Livros Cadastrados</a>
+        </nav>
+        <main> <!-- Terceira caixa -->
+            
+             <form action="inserirlivro.jsp" method="post">
+            <br><b></b>
+       <p>Inserir nome do Livro</p>
+        <input type="text" name="nome">
+        <button type="submit">ARQUIVAR</button>
+        </form>  
+        </main>
+        
+        <footer>
+            <p>Desenvolvido por: João Inácio</p>
+        </footer>
+        
+            
+    </body>
+</html>
